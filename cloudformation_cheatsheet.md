@@ -103,3 +103,14 @@ YAML
   - String 
   - { var1Name: var1Value, var2Name: var2Value }
 ``` 
+
+#### Ref 
+* return value of specified parameter or Resource
+```
+JSON
+
+{"Ref": "logicalName"}
+
+YAML 
+!Ref logicalName
+```

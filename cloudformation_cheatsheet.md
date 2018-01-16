@@ -21,7 +21,7 @@ AWSTemplateFormatVersion: "2010-09-09"
 Description: >
   Here are some details about the template
 
-Metaata:
+Metadata:
   Instances:
     Description: "Information about the instances"
   Databases:
@@ -89,3 +89,17 @@ Resources:
 
 ### Outputs
 * Outputs 部分声明输出值，你可以将这些值导入其他 Stack 中，max 60 Outputs in one cf template
+
+### Intrinsic Function Reference
+
+#### Fn::Sub
+* substitute string, Fn::Sub 
+```
+JSON 
+{"Fn::Sub" : [String, { var1Name: var1Value, var2Name: var2Value}]}
+
+YAML 
+!Sub 
+  - String 
+  - { var1Name: var1Value, var2Name: var2Value }
+``` 

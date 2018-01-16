@@ -92,6 +92,50 @@ Resources:
 
 ### Intrinsic Function Reference
 
+#### Fn::GetAtt
+* return value of attribute from resource.
+
+```
+JSON
+{"Fn::GetAtt": ["resourceLogicalName", "attrName"]}
+
+YAML 
+!GetAtt resourceLogicalName.attrName
+```
+
+#### Fn::GetAZs
+* return an array list of Available Zones for specifed region.
+
+```
+JSON
+{"Fn::GetAZs": "region"}
+
+YAML 
+!GetAZs region
+```
+
+#### Fn::Join
+* appends a set of values to single value, spearated by specified delimiter.
+
+```
+JSON
+{"Fn::Join": ["delimiter", [comma-separated list of values]]}
+
+YAML 
+!Join [delimiter, [comma-separated list of values]]
+```
+
+#### Fn::Select 
+* return single object from list by index
+
+```
+JSON 
+{"Fn::Select": [index, listOfObjects]}
+
+YAML 
+!Select [index, listOfObjects]
+```
+
 #### Fn::Sub
 * substitute string, Fn::Sub 
 ```

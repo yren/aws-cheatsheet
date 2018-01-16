@@ -158,3 +158,8 @@ JSON
 YAML 
 !Ref logicalName
 ```
+
+### Transform
+* Transform is macro system, it's specify one or more transforms that CloudFormation use to process your template. It reuse cf template component.
+
+* CloudFormation support `AWS::Serverless` and `AWS::Include`

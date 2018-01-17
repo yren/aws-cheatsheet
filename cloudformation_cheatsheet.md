@@ -92,6 +92,17 @@ Resources:
 
 ### Intrinsic Function Reference
 
+#### Fn::FindInMap
+* returns the value corresponding to keys in a two-level map that is declared in the Mappings section.
+
+```
+JSON
+{{"Fn::FindInMap": ["mapName, topLevelKey, secondLevelKey"]}}
+
+YAML
+!FindInMap [mapName, topLevelKey, secondLevelKey]
+```
+
 #### Fn::GetAtt
 * return value of attribute from resource.
 

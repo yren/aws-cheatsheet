@@ -125,6 +125,17 @@ YAML
 !GetAZs region
 ```
 
+#### Fn::ImportValue
+* returns the value of an output exported by another stack.
+
+```
+JSON
+{"Fn::ImportValue": sharedValueToImport}
+
+YAML
+!ImportValue: sharedValueToImport
+```
+
 #### Fn::Join
 * appends a set of values to single value, spearated by specified delimiter.
 
